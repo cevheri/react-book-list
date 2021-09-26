@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDom from "react-dom";
 
-
 // stateless functional component
 // always return JSX
 
@@ -13,10 +12,9 @@ import ReactDom from "react-dom";
 // close every element
 // formatting
 
-
 // function Greeting() {
 //   return <h4>Hello</h4>
-// } 
+// }
 
 // const Greeting=()=>{
 //   return React.createElement("h1",{},"helloo;")
@@ -46,6 +44,12 @@ import ReactDom from "react-dom";
 //   );
 // }
 
-
+function Greeting() {
+  return (
+    <div>
+      <h1>Hello 6</h1>
+    </div>
+  );
+}
 
 ReactDom.render(<Greeting />, document.getElementById("root"));
