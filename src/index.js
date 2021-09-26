@@ -30,13 +30,21 @@ import ReactDom from "react-dom";
 //   );
 // };
 
-function Greeting(){
-  return (
-    <div>
-      <h1>hello 3</h1>
-    </div>
-  )
-}
+// function Greeting(){
+//   return (
+//     <section>
+//       <article>
+//         <h1>hello 3</h1>
+//         <ul>
+//           <li>
+//             <a href='#'> Second Hello</a>
+//           </li>
+//         </ul>
+//       </article>
+//       <div></div>
+//     </section>
+//   );
+// }
 
 
 
