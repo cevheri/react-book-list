@@ -44,12 +44,25 @@ import ReactDom from "react-dom";
 //   );
 // }
 
-function Greeting() {
-  return (
-    <div>
-      <h1>Hello 6</h1>
-    </div>
-  );
-}
+//Nested Components, React Tools
+// function Greeting() {
+//   return (
+//     <div>
+//       <Person />
+//       <Message />
+//       <p>This new pharagraph</p>
+//     </div>
+//   );
+// }
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+// const Person = () => <h2>Cevheri</h2>
+// const Message = () => {
+//   return (
+//     <p>This is my message</p>
+//   );
+// };
+
+// ReactDom.render(<Greeting />, document.getElementById("root"));
+
+
+function 
