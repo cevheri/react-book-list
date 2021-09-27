@@ -25,20 +25,26 @@ const bookThree = {
 function BookList() {
   return (
     <section className="booklist">
-      <Book author={bookOne.author} title={bookOne.title} img={bookOne.img} />
+      <Book author={bookOne.author} title={bookOne.title} img={bookOne.img}>
+        <p> Buying on pharagraph</p>
+      <button name="Buy">Buy</button>  
+      </Book>
       <Book author={bookTwo.author} title={bookTwo.title} img={bookTwo.img} />
       <Book author={bookThree.author} title={bookThree.title} img={bookThree.img} 
       randomValue="without props"/>
     </section>
   );
 }
+
 const Book = (props) => {
+  // const Book = ({ img, title, author }) => {
+  const { img, title, author } = props;
   return (
     <article className="book">
-      <img src={props.img} alt="" />
-      <h1>{props.title}</h1>
-      <h4>{props.author.toUpperCase()}</h4>
-      <p>{props.randomValue}</p>
+      <img src={img} alt="" />
+      <h1>{title}</h1>
+      <h4>{author.toUpperCase()}</h4>
+      {props.children}
     </article>
   );
 };
