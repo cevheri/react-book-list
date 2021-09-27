@@ -23,19 +23,22 @@ const books = [
   },
 ];
 
-const names = ["Mehmet", "Cevheri", "Ahmet"];
-console.log(names);
-const mappedNames = names.map((name) => {
-  return <h4>{name}</h4>;
-});
-console.log(mappedNames);
+
 function BookList() {
-  return <section className="booklist">{mappedNames}</section>;
+  return <section className="booklist">{books.map((book)=>{
+    console.log(book);
+    return (
+      // <Book img={book.img}></Book>
+      <Book book={book}></Book>
+    );
+  })}
+  </section>;
 }
 
 const Book = (props) => {
   // const Book = ({ img, title, author, children}) => {
-  const { img, title, author } = props;
+    console.log(props);
+  const { img, title, author } = props.book;
   return (
     <article className="book">
       <img src={img} alt="" />
